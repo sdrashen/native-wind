@@ -4,7 +4,7 @@ import { Button } from "../components/Button";
 
 import colors from "tailwindcss/colors";
 
-export function Home() {
+export default function Home() {
   return (
     <View className="flex-1 bg-black items-center justify-center p-8">
       <Feather name="home" size={34} color={colors.green[500]} />

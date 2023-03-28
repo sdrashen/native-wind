@@ -1,18 +1,17 @@
 import { TouchableOpacity, Text } from "react-native";
 
-import { styled } from "nativewind";
+import { StyledComponent } from "nativewind";
 
-function ButtonStyled({ ...rest }) {
+export function Button({ ...rest }) {
   //Esse rest pega todas as props e passar para o componente
   return (
-    <TouchableOpacity className="h-14 bg-green-500 rounded-md items-center justify-center">
-      <Text className="text-white font-bold text-md">Entrar</Text>
-    </TouchableOpacity>
+    <StyledComponent component={TouchableOpacity} {...rest}>
+      <TouchableOpacity className="h-14 bg-green-500 rounded-md items-center justify-center">
+        <Text className="text-white font-bold text-md">Entrar</Text>
+      </TouchableOpacity>
+    </StyledComponent>
   );
 }
-
-const Button = styled(ButtonStyled);
-export { Button };
 
 //Com o wrapper é possível criar um componente padrão e
 //disponibilizar esse componente para ser utilizado e
