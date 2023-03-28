@@ -6,7 +6,17 @@ module.exports = {
     "./src/components/*.tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        gray: {
+          200: "#c4c4CC",
+          900: "#121214",
+        },
+        green: {
+          500: "#015F43",
+        },
+      },
+    },
   },
   plugins: [],
 };
